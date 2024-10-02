@@ -149,7 +149,7 @@ def main(pagina):
         }
       
         df = pd.DataFrame(dados)
-        df.to_csv("C:\\Users\\lucas\\OneDrive\\Documentos\\Projetos Programação\\Projetos\\Projetos para igreja\\Projeto Recadastro\\Modelo\\Lista.csv", mode='a', header=False, index=False)
+        df.to_csv("Planilha de Teste.csv", mode='a', header=False, index=False)
 
         nomecompleto.value = ""
         matricula.value = ""
