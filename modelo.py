@@ -147,11 +147,10 @@ def main(pagina):
             "Nome do Pai": [nome_pai_valor],
             "Nome da Mãe": [nome_mae_valor],
         }
-        #---------------------
+      
         df = pd.DataFrame(dados)
         df.to_csv("C:\\Users\\lucas\\OneDrive\\Documentos\\Projetos Programação\\Projetos\\Projetos para igreja\\Projeto Recadastro\\Modelo\\Lista.csv", mode='a', header=False, index=False)
 
-        #---------------------
         nomecompleto.value = ""
         matricula.value = ""
         cpf.value = ""
@@ -280,12 +279,7 @@ def main(pagina):
         content=ft.Column(controls=[Nome_usuario, Senha]),
         actions=[botao_entrar]
     )
-    # definir importação para csv
-    #-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-    #-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
+    
     # Função para abrir a janela de login
     def Abrir_popup(evento):
         pagina.overlay.append(janela)
