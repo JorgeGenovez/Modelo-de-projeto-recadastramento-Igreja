@@ -2,7 +2,7 @@ import flet as ft
 import pandas as pd
 
 
-CadastrosPIB = pd.read_csv("C:\\Users\\lucas\\OneDrive\\Documentos\\Projetos Programação\\Projetos\\Projetos para igreja\\Projeto Recadastro\\Modelo\\Planilha de Teste.csv")
+CadastrosPIB = pd.read_csv("Lista.csv")
 
 
 TratadoCadastroPIB = CadastrosPIB.drop(columns=[
