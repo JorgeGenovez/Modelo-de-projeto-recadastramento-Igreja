@@ -17,7 +17,7 @@ for coluna in TratadoCadastroPIB.columns:
 TesteCadastroPIB = TratadoCadastroPIB.drop(columns=[
     "Fotografia", "Data", "Igreja", "Pastor",
     "Situação", "Cargo Atual", "Data.1", "Modo",
-    "Origem", "Data.2", "Modo.1","Destino"
+    "Origem", "Data.2", "Modo.1"
 ])
 
 def main(pagina):
