@@ -3,22 +3,7 @@ import pandas as pd
 
 
 CadastrosPIB = pd.read_csv("Lista.csv")
-
-
-TratadoCadastroPIB = CadastrosPIB.drop(columns=[
-"Ramal","Pager","Tel. Comercial","Escolaridade",
-"Referência", "Observações","Célula Familiar",
-"Identificação", "Templo"
-])
-
-for coluna in TratadoCadastroPIB.columns:
-    TratadoCadastroPIB[coluna] = TratadoCadastroPIB[coluna].apply(lambda x: x.capitalize() if isinstance(x, str) else x)
-
-TesteCadastroPIB = TratadoCadastroPIB.drop(columns=[
-    "Fotografia", "Data", "Igreja", "Pastor",
-    "Situação", "Cargo Atual", "Data.1", "Modo",
-    "Origem", "Data.2", "Modo.1"
-])
+TesteCadastroPIB = CadastrosPIB
 
 def main(pagina):
     Rc = ft.Text("Recadastramento")
