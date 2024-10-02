@@ -2,7 +2,7 @@ import flet as ft
 import pandas as pd
 
 
-CadastrosPIB = pd.read_csv("Lista.csv")
+CadastrosPIB = pd.read_csv("Planilha de Teste.csv")
 TesteCadastroPIB = CadastrosPIB
 
 def main(pagina):
@@ -134,7 +134,7 @@ def main(pagina):
         }
       
         df = pd.DataFrame(dados)
-        df.to_csv("Planilha de Teste.csv", mode='a', header=False, index=False)
+        df.to_csv("Lista.csv", mode='a', header=False, index=False)
 
         nomecompleto.value = ""
         matricula.value = ""
